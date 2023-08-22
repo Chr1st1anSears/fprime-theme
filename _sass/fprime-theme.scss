@@ -404,6 +404,21 @@ Full-Width Styles
   background: url(../images/sprite_download.png) no-repeat top right;
 }
 
+#side_nav {
+  display: block;
+  position: absolute;
+  top:0;
+  left: 0px;
+  z-index: 10;
+  padding: 10px 50px 10px 10px;
+  color: #ffffff;
+  background: $fp-darkblue no-repeat 95% 50%;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
 #main_content_wrap {
   background: #f2f2f2;
   border-top: 1px solid #111;
