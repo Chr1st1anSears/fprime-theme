@@ -273,39 +273,6 @@ form {
   padding: 20px;
 }
 
-.nav {
-    width: 250px;
-    background-color: #f2f2f2;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-
-    ul {
-        list-style: none;
-        padding: 0;
-
-        li {
-            margin: 0;
-            padding: 10px 0;
-            border-bottom: 1px solid #ccc;
-
-            &:last-child {
-                border-bottom: none;
-            }
-
-            a {
-                text-decoration: none;
-                color: #333;
-                display: block;
-                padding: 10px 20px;
-
-                &:hover {
-                    background-color: #ddd;
-                }
-            }
-        }
-    }
-}
 
 /*******************************************************************************
 Full-Width Styles
@@ -405,18 +372,37 @@ Full-Width Styles
 }
 
 #side_nav {
-  display: block;
-  position: absolute;
-  top:0;
-  left: 0px;
-  z-index: 10;
-  padding: 10px 50px 10px 10px;
-  color: #ffffff;
-  background: $fp-darkblue no-repeat 95% 50%;
-  font-weight: 700;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+    width: 250px;
+    background-color: #f2f2f2;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin: 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: #333;
+                display: block;
+                padding: 10px 20px;
+
+                &:hover {
+                    background-color: #ddd;
+                }
+            }
+        }
+    }
 }
 
 #main_content_wrap {
