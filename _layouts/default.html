@@ -59,6 +59,7 @@
         detailsSections.forEach(function(section) {
           const summary = section.querySelector('summary');
           const itemKey = summary.textContent.trim();
+          console.log(itemKey, isActive);
           const isActive = localStorage.getItem(itemKey) === 'true';
 
           console.log(itemKey, isActive);
