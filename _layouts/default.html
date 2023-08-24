@@ -61,13 +61,14 @@
           const itemKey = summary.textContent.trim();
           const isActive = localStorage.getItem(itemKey) === 'true';
 
-          console.log(itemKey, isActive);
+          //console.log(itemKey, isActive);
           
           if (isActive) {
             section.setAttribute('open', 'open');
           }
 
           summary.addEventListener('click', function() {
+            console.log('Clicked on summary:', itemKey);
             const isActive = section.hasAttribute('open');
             localStorage.setItem(itemKey, isActive);
           });
