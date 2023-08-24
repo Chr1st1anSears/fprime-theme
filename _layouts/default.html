@@ -68,7 +68,7 @@
           }        
           
           summary.addEventListener('click', function() {
-            const isActive = section.hasAttribute('open');
+            const isActive = !section.hasAttribute('open');
             localStorage.setItem(itemKey, isActive);
             console.log(itemKey, isActive);
             console.log('local storage says isActive is ', localStorage.getItem(itemKey));
