@@ -71,9 +71,11 @@
             const isActive = !section.hasAttribute('open');
             localStorage.setItem(itemKey, isActive);
             console.log(itemKey, isActive);
-            console.log('local storage says isActive is ', localStorage.getItem(itemKey));
+            console.log('in first loop, local storage says isActive is ', localStorage.getItem(itemKey));
           });
+          console.log('in second loop, local storage says isActive is ', localStorage.getItem(itemKey));
         });
+        console.log('in third loop, local storage says isActive is ', localStorage.getItem(itemKey));
       });
     </script>
     
