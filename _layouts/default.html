@@ -51,6 +51,7 @@
       </footer>
     </div>
 
+    
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         const summaries = document.querySelectorAll('summary');
@@ -59,25 +60,24 @@
           const section = summary.parentElement; // <details> element
           const itemKey = summary.textContent.trim(); // Use the section title as the localStorage key
 
-        // Check if the itemKey exists in localStorage
-          const isActive = localStorage.getItem(itemKey) === 'true';
-
-          if (isActive) {
-            section.setAttribute('open', 'open');
-          }
-
-          section.addEventListener('click', function () {
+          summary.addEventListener('click', function () {
             if (section.hasAttribute('open')) {
-              localStorage.setItem(itemKey, 'true');
+              localStorage.setItem(itemKey, 'open');
             } else {
-              localStorage.setItem(itemKey, 'false');
+              localStorage.removeItem(itemKey);
             }
           });
+
+          // Check if the itemKey exists in localStorage
+          if (localStorage.getItem(itemKey) === 'open') {
+            section.setAttribute('open', 'open');
+          }
         });
       });
+
     </script>
     
-    <!-- KEEP COLLAPSIBLE MENU ITEMS OPEN/CLOSE ACROSS PAGES 
+    <!-- failed script 1 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const detailsSections = document.querySelectorAll('details');
