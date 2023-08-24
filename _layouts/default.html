@@ -71,6 +71,7 @@
             console.log('Clicked on summary:', itemKey);
             const isActive = section.hasAttribute('open');
             localStorage.setItem(itemKey, isActive);
+            console.log(itemKey, isActive);
           });
         });
       });
