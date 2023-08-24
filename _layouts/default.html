@@ -61,7 +61,7 @@
           const itemKey = summary.textContent.trim();
           const isActive = 'false';
           console.log('starting up with ', itemKey, isActive);          
-          if (localStorage.getItem(itemKey)) {
+          if (!(localStorage.getItem(itemKey))) {
             section.setAttribute('open', 'open');
             const isActive = 'true';
             console.log('went into the if loop for ', itemKey, isActive);
@@ -75,7 +75,6 @@
           });
           console.log('in second loop, local storage says isActive is ', localStorage.getItem(itemKey));
         });
-        console.log('in third loop, local storage says isActive is ', localStorage.getItem(itemKey));
       });
     </script>
     
