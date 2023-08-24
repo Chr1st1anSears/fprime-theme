@@ -51,6 +51,28 @@
       </footer>
     </div>
 
+    <!-- KEEP COLLAPSIBLE MENU ITEMS OPEN/CLOSE ACROSS PAGES -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const detailsSections = document.querySelectorAll('details');
+
+        detailsSections.forEach(function(section) {
+          const summary = section.querySelector('summary');
+          const itemKey = summary.textContent.trim();
+          const isActive = localStorage.getItem(itemKey) === 'true';
+      
+          if (isActive) {
+            section.setAttribute('open', 'open');
+          }
+
+          summary.addEventListener('click', function() {
+            const isActive = section.hasAttribute('open');
+            localStorage.setItem(itemKey, isActive);
+          });
+        });
+      });
+    </script>
+    
     {% if site.google_analytics %}
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
