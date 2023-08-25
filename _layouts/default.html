@@ -51,6 +51,30 @@
       </footer>
     </div>
 
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const summaries = document.querySelectorAll('summary');
+
+        summaries.forEach((summary) => {
+          const section = summary.parentElement; // <details> element
+          const itemKey = summary.textContent.trim(); // Use the section title as the cookie name
+
+          summary.addEventListener('click', function () {
+            if (section.hasAttribute('open')) {
+              document.cookie = `${itemKey}=open; path=/`; // Set the cookie
+            } else {
+              document.cookie = `${itemKey}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`; // Remove the cookie
+            }
+          });
+
+          // Check if the itemKey cookie exists
+          if (document.cookie.includes(`${itemKey}=open`)) {
+            section.setAttribute('open', 'open');
+          }
+        });
+      });
+
+    </script>
     
     <!-- <script>
       document.addEventListener('DOMContentLoaded', function () {
