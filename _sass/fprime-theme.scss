@@ -372,15 +372,15 @@ Full-Width Styles
   background: url(../images/sprite_download.png) no-repeat top right;
 }
 
-#side_nav_wrap {
+/*#side_nav_wrap {*/
+    
+
+#side_nav {
     background-color: #f2f2f2;
     width: 20%;
     max-width: 250px;
     border-top: 1px solid #111;
     border-bottom: 1px solid #111;
-}
-
-#side_nav {
     padding-top: 40px;   
     overflow: auto;
 /*
@@ -415,11 +415,11 @@ Full-Width Styles
   background: #f2f2f2;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
-  width: 80%;
 }
 
 #main_content {
   padding-top: 40px;
+  width: 80%;
 }
 
 #footer_wrap {
