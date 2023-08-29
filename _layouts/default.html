@@ -32,128 +32,12 @@
           {% endif %}
         </header>
     </div>
-   <body>
-    <nav class="sidebar">
-      <a href="#" class="logo">CodingLab</a>
-      <div class="menu-content">
-        <ul class="menu-items">
-          <div class="menu-title">Your menu title</div>
-          <li class="item">
-            <a href="#">Your first link</a>
-          </li>
-          <li class="item">
-            <div class="submenu-item">
-              <span>First submenu</span>
-              <i class="fa-solid fa-chevron-right"></i>
-            </div>
-            <ul class="menu-items submenu">
-              <div class="menu-title">
-                <i class="fa-solid fa-chevron-left"></i>
-                Your submenu title
-              </div>
-              <li class="item">
-                <a href="#">First sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">First sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">First sublink</a>
-              </li>
-            </ul>
-          </li>
-          <li class="item">
-            <div class="submenu-item">
-              <span>Second submenu</span>
-              <i class="fa-solid fa-chevron-right"></i>
-            </div>
-            <ul class="menu-items submenu">
-              <div class="menu-title">
-                <i class="fa-solid fa-chevron-left"></i>
-                Your submenu title
-              </div>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-              <li class="item">
-                <a href="#">Second sublink</a>
-              </li>
-            </ul>
-          </li>
-          <li class="item">
-            <a href="#">Your second link</a>
-          </li>
-          <li class="item">
-            <a href="#">Your third link</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <nav class="navbar">
-      <i class="fa-solid fa-bars" id="sidebar-close"></i>
-    </nav>
+   
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
-     <!-- <section id="side_nav" class="inner">
+      <section id="side_nav" class="inner">
         {% include toc.md %}    
-      </section> -->
+      </section>
       <section id="main_content" class="inner">
         {{ content }}
       </section>
@@ -245,34 +129,7 @@
         });
       });
     </script>-->
-    <script>
-      const sidebar = document.querySelector(".sidebar");
-      const sidebarClose = document.querySelector("#sidebar-close");
-      const menu = document.querySelector(".menu-content");
-      const menuItems = document.querySelectorAll(".submenu-item");
-      const subMenuTitles = document.querySelectorAll(".submenu .menu-title");
-
-      sidebarClose.addEventListener("click", () => sidebar.classList.toggle("close"));
-
-      menuItems.forEach((item, index) => {
-        item.addEventListener("click", () => {
-          menu.classList.add("submenu-active");
-          item.classList.add("show-submenu");
-          menuItems.forEach((item2, index2) => {
-            if (index !== index2) {
-              item2.classList.remove("show-submenu");
-            }
-          });
-        });
-      });
-
-      subMenuTitles.forEach((title) => {
-        title.addEventListener("click", () => {
-          menu.classList.remove("submenu-active");
-        });
-      });
-    </script>
-     
+    
     {% if site.google_analytics %}
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
