@@ -376,24 +376,21 @@ Full-Width Styles
   padding-top: 40px;
   width: 20%;
   max-width: 250px;
-  float: left; /* Float the navigation to the left to make room for the main content */
-  display: inline-block; 
   overflow: auto;
-}
-
-#side_nav a:hover {
-  background-color: #ddd;
 }
 
 #main_content_wrap {
   background: #f2f2f2;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
+  display: flex;
+  justify-content: center;
+  align-items: flex start;
+  flex-grow: 1;
 }
 
 #main_content {
   padding-top: 40px;
-  display: inline-block;
 }
 
 #footer_wrap {
