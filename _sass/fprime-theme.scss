@@ -286,6 +286,7 @@ Full-Width Styles
   position: relative;
   max-width: 640px;
   padding: 20px 10px;
+  display: inline-block; //New
   margin: 0 auto;
 }
 
@@ -379,7 +380,7 @@ Full-Width Styles
     padding-top: 40px;
     //width: 20%;
     max-width: 250px;
-    display: inline-block;
+    //display: inline-block;
     overflow: auto;
     vertical-align: top;
 /*
