@@ -375,39 +375,25 @@ Full-Width Styles
     
 
 #side_nav {
-    background-color: #f2f2f2;
-    padding-top: 40px;
-    width: 20%;
-    max-width: 250px;
-    display: inline-block;
-    overflow: auto;
-    vertical-align: top;
-/*
-    ul {
-        list-style: none;
-        padding: 0;
+  background-color: #f2f2f2;
+  padding-top: 40px;
+  width: 20%;
+  max-width: 250px;
+  float: left; /* Float the navigation to the left to make room for the main content */
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #111;
+  overflow: auto;
+}
 
-        li {
-            margin: 0;
-            padding: 10px 0;
-            border-bottom: 1px solid #ccc;
+#side_nav a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px 20px;
+}
 
-            &:last-child {
-                border-bottom: none;
-            }
-
-            a {
-                text-decoration: none;
-                color: #333;
-                display: block;
-                padding: 10px 20px;
-
-                /*&:hover {
-                    background-color: #ddd;
-                }
-            }
-        }
-    }*/
+#side_nav a:hover {
+  background-color: #ddd;
 }
 
 #main_content_wrap {
@@ -417,9 +403,8 @@ Full-Width Styles
 }
 
 #main_content {
-  padding-top: 40px;
-  width: 80%;
-  display: inline-block;
+  padding: 40px 20px; /* Adjust padding to your liking */
+  margin-left: 250px; /* Make sure it accounts for the width of the sidebar */
 }
 
 #footer_wrap {
