@@ -35,12 +35,16 @@
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
-      <nav id="side_nav" class="inner">
-        {% include toc.md %}    
-      </nav>
-      <section id="main_content" class="inner">
-        {{ content }}
-      </section>
+      <div id="side_nav_wrap" class="inner"> 
+        <nav id="side_nav" class="inner">
+          {% include toc.md %}    
+        </nav>
+      </div>
+      <div id="page_content_wrap" class="inner">
+        <section id="main_content" class="inner">
+          {{ content }}
+        </section>
+      </div>
     </div>
 
     <!-- FOOTER  -->
