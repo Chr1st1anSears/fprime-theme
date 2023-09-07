@@ -543,7 +543,8 @@ Small Device Styles
   }
 
   #side_nav_wrap {
-    justify-self: center;
+    display: flex;
+    justify-items: center;
     padding-bottom: 0px;
   }
   
@@ -551,6 +552,10 @@ Small Device Styles
     width: 100%;
   }
 
+  #page_content_wrap {
+    padding-top: 0px;
+  }
+  
   #filler {
     height: 0px;
     padding: 0px;
