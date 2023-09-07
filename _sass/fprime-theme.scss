@@ -541,9 +541,19 @@ Small Device Styles
   #main_content_wrap {
     flex-wrap: wrap;
   }
+
+  #side_nav_wrap {
+    justify-self: center;
+    padding-bottom: 0px;
+  }
   
   #side_nav {
     width: 100%;
+  }
+
+  #filler {
+    height: 0px;
+    padding: 0px;
   }
   
 }
