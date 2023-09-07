@@ -479,14 +479,29 @@ Small Device Styles
   code, pre {
     font-size: 11px;
   }
-  /*
+  
   #main_content_wrap {
     flex-wrap: wrap;
   }
 
+  #side_nav_wrap {
+    display: flex;
+    justify-items: center;
+    padding-bottom: 0px;
+  }
+  
   #side_nav {
     width: 100%;
-  }*/
+  }
+
+  #page_content_wrap {
+    padding-top: 0px;
+  }
+  
+  #filler {
+    height: 0px;
+    padding: 0px;
+  }
   
 }
 
@@ -537,7 +552,7 @@ Small Device Styles
     max-width: 320px;
     font-size: 11px;
   }
-  /*
+  
   #main_content_wrap {
     flex-wrap: wrap;
   }
@@ -560,5 +575,5 @@ Small Device Styles
     height: 0px;
     padding: 0px;
   }
-  */
+  
 }
