@@ -404,7 +404,7 @@ Full-Width Styles
   flex-grow: 1;
   flex-shrink: 1;
   max-width: none;
-  padding: 50px 0px;
+  padding: 50px 20px;
 }
 
 #page_content {
@@ -483,12 +483,13 @@ Small Device Styles
   }
 
   #side_nav_wrap {
-    padding: 20px 0px 0px 0px;
+    padding: 0px;
   }
   
   #side_nav {
     width: 100%;
     height: auto;
+    margin-left: 0;
   }
 
   #page_content_wrap {
@@ -556,12 +557,13 @@ Small Device Styles
   }
 
   #side_nav_wrap {
-    padding: 20px 0px 0px 0px;
+    padding: 0px;
   }
   
   #side_nav {
     width: 100%;
     height: auto;
+    margin-left: 0;
   }
 
   #page_content_wrap {
