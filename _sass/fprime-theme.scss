@@ -383,7 +383,7 @@ Full-Width Styles
   }
 
 #side_nav_wrap {
-  padding: 40px 5px;
+  padding: 0px 0px;
   flex-shrink: 4;
   width: 258px;
 }
@@ -395,6 +395,7 @@ Full-Width Styles
   width: -moz-fit-content;
   width: fit-content;
   height: 100%;
+  padding: 40px 5px;
   top: 0;
   margin-left: 0;
 }
