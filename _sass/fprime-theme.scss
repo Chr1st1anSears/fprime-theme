@@ -391,14 +391,12 @@ Full-Width Styles
 #side_nav {
   color: $fp-brightorange;
   background: $fp-darkblue;
-  border-radius: 25px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: auto;
+  height: 100%;
   top: 0;
   margin-left: 0;
-  position:sticky;
 }
 
 #page_content_wrap {
