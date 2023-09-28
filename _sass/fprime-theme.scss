@@ -385,7 +385,7 @@ Full-Width Styles
 #side_nav_wrap {
   padding: 0px 0px;
   flex-shrink: 4;
-  width: 258px;
+  width: 300px;
 }
 
 #side_nav {
@@ -395,7 +395,7 @@ Full-Width Styles
   width: -moz-fit-content;
   width: fit-content;
   height: 100%;
-  padding: 60px 15px;
+  padding: 40px 5px;
   top: 0;
   margin-left: 0;
 }
@@ -412,7 +412,7 @@ Full-Width Styles
 }
 
 #filler {
-  width: 258px;
+  width: 300px;
   flex-shrink: 10;
 }
 
@@ -489,6 +489,7 @@ Small Device Styles
   
   #side_nav {
     width: 100%;
+    height: auto;
   }
 
   #page_content_wrap {
@@ -562,6 +563,7 @@ Small Device Styles
   
   #side_nav {
     width: 100%;
+    height: auto;
   }
 
   #page_content_wrap {
